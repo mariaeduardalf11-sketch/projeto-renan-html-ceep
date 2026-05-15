@@ -1,73 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professores</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/layout.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #e9e9e9;
+      color: #222;
+    }
+
+    header {
+      background: #ff5353;
+      text-align: center;
+      padding: 15px 20px 35px;
+    }
+
+    header img {
+      width: 180px;
+      margin-bottom: 25px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav a {
+      display: inline-block;
+
+      background: #f5f5f5;
+      color: #222;
+
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+
+      padding: 16px 28px;
+
+      border-radius: 12px;
+
+      transition: 0.3s;
+
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a:hover {
+      background: #0033cc;
+      color: white;
+
+      transform: translateY(-3px);
+    }
+
+    main {
+      background: white;
+      width: 85%;
+      margin: 35px auto;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    main h2 {
+      font-size: 38px;
+      color: #0033cc;
+      margin-bottom: 35px;
+    }
+
+    main h3 {
+      color: #b30000;
+      font-size: 28px;
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+
+    main ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    main ul li {
+      font-size: 18px;
+      margin: 12px 0;
+      line-height: 1.6;
+    }
+
+    strong {
+      color: #000;
+    }
+
+    hr {
+      width: 60%;
+      margin: 40px auto;
+      border: 1px solid #b30000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+      background: #e9e9e9;
+    }
+
+    footer p {
+      color: #555;
+      font-size: 16px;
+    }
+  </style>
+
 </head>
+
 <body>
 
-<header>
-  <h1>CEEP Lourdinha Guerra</h1>
-  <nav>
+  <header>
+
+    <img src="ceep (1).png" alt="CEEP Lourdinha Guerra">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="históriaplg.html">História</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="matricula.html">matriculas</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <h2>Professores</h2>
+
+    <h3>Linguagens</h3>
+
     <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="históriaplg.html">História</a></li>
-      <li><a href="cursos.html">Cursos</a></li>
-      <li><a href="professores.html">Professores</a></li>
+      <li><strong>Português:</strong> Leidivânia Mendes de A. Melchuna e Alessandra Santa Rosa da Silva</li>
+
+      <li><strong>Inglês:</strong> Eliana Maria Barbosa Nascimento</li>
+
+      <li><strong>Espanhol:</strong> Danilo Sarafim da Silva</li>
+
+      <li><strong>Artes:</strong> Marcus Venicius da Silva</li>
+
+      <li><strong>Educação Física:</strong> Theluzio Klayton Marinho Campos</li>
     </ul>
-  </nav>
-</header>
 
-<main>
-  <h2>Professores</h2>
+    <h3>Ciências Humanas</h3>
 
-  <h3>Linguagens</h3>
-  <ul>
-    <li>Português: Leidivânia Mendes de A. Melchuna e Alessandra Santa Rosa da Silva </li>
-    <li>Inglês: Eliana Maria Barbosa  Nascimento </li>
-    <li>Espanhol: Danilo Sarafim da silva </li>
-    <li>Artes: Marcus Venicius da Silva </li>
-    <li>Educação Física: Theluzio Klayton Marinho Campos </li>
-  </ul>
+    <ul>
+      <li><strong>Geografia:</strong> Luciana Tavares Santiago</li>
 
-  <h3>Ciências Humanas</h3>
-  <ul>
-    <li>Geografia: Luciana Tavares Santiago </li>
-    <li>História: Verbena Nidiane de Moura Ribeiro </li>
-    <li>Sociologia: Maria Elizângela Mendes de Morais  </li>
-    <li>Filosofia: Bernardo  Rafael de Sousa Nunes </li>
-  </ul>
+      <li><strong>História:</strong> Verbena Nidiane de Moura Ribeiro</li>
 
-  <h3>Ciências da Natureza</h3>
-  <ul>
-    <li>Biologia: Simone Cassiano de Lima Sousa e Raphael Bender Chagas Leite </li>
-    <li>Química: Ewerton Richard Fernandes Teixeira </li>
-    <li>Física: Elcio Correia de Souza Tavares e Ianne Ohanna de Araújo Labre da Nóbrega </li>
-  </ul>
+      <li><strong>Sociologia:</strong> Maria Elizângela Mendes de Morais</li>
 
-  <h3>Matemática</h3>
-  <ul>
-    <li>Kacio Jose Cardoso Santos </li>
-    <li> Adriano Marques de Souza </li> 
-  </ul>
+      <li><strong>Filosofia:</strong> Bernardo Rafael de Sousa Nunes</li>
+    </ul>
 
-  <h3>Base Técnica</h3>
-  <ul>
-    <li>José Márcio Dantas</li>
-    <li>Izaac Shallon Gomes Costa </li>
-    <li>Renato</li>
-    <li>Renan Alves de Morais Rocha </li>
-    <li>Rodrigo Rodrigues Melo de Lima</li>
-  </ul>
+    <h3>Ciências da Natureza</h3>
 
-  <hr>
-</main>
+    <ul>
+      <li><strong>Biologia:</strong> Simone Cassiano de Lima Sousa e Raphael Bender Chagas Leite</li>
 
-<footer>
-  <p>© 2026 CEEP Lourdinha Guerra</p>
-</footer>
+      <li><strong>Química:</strong> Ewerton Richard Fernandes Teixeira</li>
 
+      <li><strong>Física:</strong> Elcio Correia de Souza Tavares e Ianne Ohanna de Araújo Labre da Nóbrega</li>
+    </ul>
+
+    <h3>Matemática</h3>
+
+    <ul>
+      <li>Kacio Jose Cardoso Santos</li>
+
+      <li>Adriano Marques de Souza</li>
+    </ul>
+
+    <h3>Base Técnica</h3>
+
+    <ul>
+      <li>José Márcio Dantas</li>
+
+      <li>Izaac Shallon Gomes Costa</li>
+
+      <li>Renato</li>
+
+      <li>Renan Alves de Morais Rocha</li>
+
+      <li>Rodrigo Rodrigues Melo de Lima</li>
+    </ul>
+
+    <hr>
+
+  </main>
 </body>
+
 </html>

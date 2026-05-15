@@ -1,82 +1,362 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cursos</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/layout.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #e9e9e9;
+      color: #222;
+    }
+
+    /* TOPO */
+    header {
+      background: #ff5353;
+      text-align: center;
+      padding: 15px 20px 35px;
+    }
+
+    header img {
+      width: 180px;
+      margin-bottom: 25px;
+    }
+
+    /* MENU */
+    nav ul {
+      list-style: none;
+      padding: 0;
+
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav a {
+      display: inline-block;
+
+      background: #f5f5f5;
+      color: #222;
+
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+
+      padding: 16px 28px;
+
+      border-radius: 12px;
+
+      transition: 0.3s;
+
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a:hover {
+      background: #0033cc;
+      color: white;
+
+      transform: translateY(-3px);
+    }
+
+    /* CONTEÚDO */
+    main {
+      background: white;
+      width: 85%;
+      margin: 35px auto;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    main h2 {
+      font-size: 35px;
+      color: #0033cc;
+      margin-bottom: 25px;
+    }
+
+    main p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    /* LISTA */
+    ul.cursos-lista {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.cursos-lista li {
+      font-size: 22px;
+      margin: 12px 0;
+      font-weight: bold;
+    }
+
+    /* LINHA */
+    hr {
+      width: 60%;
+      margin: 35px auto;
+      border: 1px solid #b30000;
+    }
+
+    /* CARDS DOS CURSOS */
+    .curso-box {
+      background: #f5f5f5;
+
+      padding: 30px;
+
+      margin-top: 30px;
+
+      border-radius: 12px;
+
+      text-align: left;
+
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .curso-box h3 {
+      color: #b30000;
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .curso-box p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    /* TABELA */
+    table {
+      width: 90%;
+      margin: auto;
+
+      border-collapse: collapse;
+
+      background: white;
+
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th {
+      background: #0033cc;
+      color: white;
+      padding: 15px;
+      font-size: 18px;
+    }
+
+    td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      font-size: 17px;
+    }
+
+    tr:nth-child(even) {
+      background: #f2f2f2;
+    }
+
+    tr:hover {
+      background: #dfe8ff;
+    }
+
+    /* RODAPÉ */
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+      background: #e9e9e9;
+    }
+
+    footer p {
+      color: #555;
+      font-size: 16px;
+    }
+  </style>
+
 </head>
+
 <body>
 
-<header>
-  <h1>CEEP Lourdinha Guerra</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="históriaplg.html">História</a></li>
-      <li><a href="cursos.html">Cursos</a></li>
-      <li><a href="professores.html">Professores</a></li>
+  <header>
+
+    <img src="ceep (1).png" alt="CEEP Lourdinha Guerra">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="históriaplg.html">História</a></li>
+        <li><a href="professores.html">Professores</a></li>
+        <li><a href="matricula.html">Matrículas</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <h2>Cursos Técnicos</h2>
+
+    <p>
+      O CEEP Lourdinha Guerra oferece cursos técnicos integrados ao ensino médio,
+      preparando os alunos para o mercado de trabalho e para o ensino superior.
+    </p>
+
+    <ul class="cursos-lista">
+      <li>Informática</li>
+      <li>Redes</li>
     </ul>
-  </nav>
-</header>
 
-<main>
-  <h2>Cursos</h2>
+    <hr>
 
-  <ul>
-    <li>Informática</li>
-    <li>Redes</li>
-  </ul>
+    <!-- INFORMÁTICA -->
+    <div class="curso-box">
 
-  <hr>
+      <h3>Curso Técnico em Informática</h3>
 
-  <h2>Turmas</h2>
+      <p>
+        O curso técnico em Informática prepara os alunos para trabalhar com tecnologia,
+        programação e ferramentas digitais.
+      </p>
 
-  <table>
-    <tr>
-      <th>Curso</th>
-      <th>Ano</th>
-      <th>Turma</th>
-    </tr>
+      <p>
+        Durante o curso, os estudantes aprendem conteúdos relacionados à lógica de programação,
+        criação de sites, banco de dados, sistemas computacionais
+        e utilização de ferramentas tecnológicas.
+      </p>
 
-    <tr><td>Informática</td><td>1º</td><td>A</td></tr>
-    <tr><td>Informática</td><td>1º</td><td>B</td></tr>
-    <tr><td>Informática</td><td>2º</td><td>A</td></tr>
-    <tr><td>Informática</td><td>2º</td><td>B</td></tr>
-    <tr><td>Informática</td><td>3º</td><td>A</td></tr>
-    <tr><td>Informática</td><td>3º</td><td>B</td></tr>
+      <p>
+        Além disso, o curso ajuda os alunos a desenvolverem criatividade,
+        raciocínio lógico e habilidades importantes para profissões ligadas à tecnologia.
+      </p>
 
-    <tr><td>Redes</td><td>1º</td><td>A</td></tr>
-    <tr><td>Redes</td><td>1º</td><td>B</td></tr>
-    <tr><td>Redes</td><td>2º</td><td>A</td></tr>
-    <tr><td>Redes</td><td>2º</td><td>B</td></tr>
-    <tr><td>Redes</td><td>3º</td><td>A</td></tr>
-    <tr><td>Redes</td><td>3º</td><td>B</td></tr>
-  </table>
+    </div>
 
-  <hr>
+    <!-- REDES -->
+    <div class="curso-box">
 
-  <h2>Formulário</h2>
+      <h3>Curso Técnico em Redes</h3>
 
-  <form>
-    <p>Curso:</p>
-    <input type="radio" name="curso"> Informática<br>
-    <input type="radio" name="curso"> Redes<br>
+      <p>
+        O curso técnico em Redes é voltado para alunos que desejam aprender
+        sobre conexão de computadores, internet e infraestrutura tecnológica.
+      </p>
 
-    <p>Interesses:</p>
-    <input type="checkbox"> Área de Informática<br>
-    <input type="checkbox"> Área de Redes<br>
+      <p>
+        Durante o curso, os estudantes aprendem sobre instalação de redes,
+        configuração de computadores, segurança digital,
+        servidores e funcionamento da internet.
+      </p>
 
-    <br><br>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Limpar">
-  </form>
+      <p>
+        Esse curso é importante para formar profissionais capazes
+        de organizar e manter sistemas de comunicação e redes
+        utilizados em empresas e instituições.
+      </p>
 
-</main>
+    </div>
 
-<footer>
-  <p>© 2026 CEEP Lourdinha Guerra</p>
-</footer>
+    <hr>
+
+    <h2>Turmas</h2>
+
+    <table>
+
+      <tr>
+        <th>Curso</th>
+        <th>Ano</th>
+        <th>Turma</th>
+      </tr>
+
+      <tr>
+        <td>Informática</td>
+        <td>1º</td>
+        <td>A</td>
+      </tr>
+
+      <tr>
+        <td>Redes</td>
+        <td>1º</td>
+        <td>A</td>
+      </tr>
+
+      <tr>
+        <td>Informática</td>
+        <td>1º</td>
+        <td>B</td>
+      </tr>
+
+      <tr>
+        <td>Redes</td>
+        <td>1º</td>
+        <td>B</td>
+      </tr>
+
+      <tr>
+        <td>Informática</td>
+        <td>2º</td>
+        <td>A</td>
+      </tr>
+
+      <tr>
+        <td>Redes</td>
+        <td>2º</td>
+        <td>A</td>
+      </tr>
+
+      <tr>
+        <td>Informática</td>
+        <td>2º</td>
+        <td>B</td>
+      </tr>
+
+      <tr>
+        <td>Redes</td>
+        <td>2º</td>
+        <td>B</td>
+      </tr>
+
+      <tr>
+        <td>Informática</td>
+        <td>3º</td>
+        <td>A</td>
+      </tr>
+
+      <tr>
+        <td>Redes</td>
+        <td>3º</td>
+        <td>A</td>
+      </tr>
+
+      <tr>
+        <td>Informática</td>
+        <td>3º</td>
+        <td>B</td>
+      </tr>
+
+      <tr>
+        <td>Redes</td>
+        <td>3º</td>
+        <td>B</td>
+      </tr>
+
+    </table>
+
+  </main>
+
+  <footer>
+    <p>© 2026 CEEP Lourdinha Guerra</p>
+  </footer>
 
 </body>
+
 </html>
